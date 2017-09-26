@@ -6,9 +6,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --single-run",
+    "test:watch": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "precommit": "ng lint && npm test",
+    "prepush": "ng build --aot true && npm test"
   },
   "private": true,
   "dependencies": {
