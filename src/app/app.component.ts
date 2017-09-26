@@ -6,8 +6,6 @@ import { Observable } from 'rxjs';
 // import { Observable } from 'rxjs/Observable';
 // import '/add/observable/of';
 
-declare var x;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,6 +24,6 @@ export class AppComponent implements OnInit {
     });
   }
   submit() {
-
+    console.log(this.message);
   }
 }
